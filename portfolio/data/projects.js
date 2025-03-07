@@ -63,3 +63,36 @@ export const conceptWorks = [
     alt: "Concept works",
   },
 ];
+
+export const experience = [
+  {
+    id: 1,
+    title: "Norma",
+    position: "Digital Product Designer",
+    time: "Mar 21 — Now",
+  },
+  {
+    id: 2,
+    title: "Enrich Mobile",
+    position: "UI Designer ",
+    time: "Apr 2020 — Mar 21",
+  },
+  {
+    id: 3,
+    title: "ASDC",
+    position: "UI Designer",
+    time: "Jun 2020 — Mar 20",
+  },
+  {
+    id: 4,
+    title: "Talent Mondo",
+    position: "Contract UI Designer",
+    time: "Mar 20 — Jun 20",
+  },
+  {
+    id: 5,
+    title: "MobileUpp",
+    position: "iOS Developer & UI Designer",
+    time: "Jan 19 — Mar 20",
+  },
+];
