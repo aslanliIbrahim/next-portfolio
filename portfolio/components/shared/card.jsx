@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "@/data/projects";
-export default function Card({ margin }) {
+export default function Card({ margin, projects, linkTitle = "See All" }) {
   return (
-    <section className={`grid md:grid-cols-3 gap-6 my-[${margin}]`}>
+    <section
+      className={`grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-[${margin}]`}
+    >
       {projects.map((project) => (
         <div className="w-[264px]" key={project.id}>
           <div className="mb-4">
@@ -18,7 +19,7 @@ export default function Card({ margin }) {
               className="text-gray-700 font-medium underline underline-offset-1"
               href={project.id}
             >
-              See All
+              {linkTitle}
             </Link>
           </div>
         </div>
