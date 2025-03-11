@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Concept({ margin, items, title, type }) {
   return (
-    <section className={`mb-[${margin}]`}>
+    <section className={`my-[${margin}]`}>
       <div>
         <h2 className="font-medium text-gray-700 text-2xl mb-4">{title}</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-6">
         {items.map((item) => (
           <div
             key={item.id}
-            className={type === "concept" ? "bg-gray-100 p-2 rounded" : ""}
+            className={type === "concept" ? "bg-gray-100 p-2 rounded flex justify-center items-center" : ""}
           >
             {type === "concept" && (
               <Image

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Aslanli from "../../public/Aslanli.jpg";
+import Link from "next/link";
 
 export default function Title() {
   return (
@@ -29,9 +30,12 @@ export default function Title() {
           MobileUpp. I love working on side projects, trying to improve myself
           on SwiftUI and Webflow.
         </p>
-        <p className="text-gray-700 underline  underline-offset-1 cursor-pointer">
+        <Link
+          href="#form"
+          className="text-gray-700 underline  underline-offset-1 cursor-pointer"
+        >
           Contact me
-        </p>
+        </Link>
       </div>
     </section>
   );
