@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function Concept({ margin, items, title, type }) {
+export default function Concept({ items, title, type }) {
   return (
-    <section className={`my-[${margin}]`}>
+    <section className={`my-[127px]`}>
       <div>
         <h2 className="font-medium text-gray-700 text-2xl mb-4">{title}</h2>
       </div>
@@ -10,7 +10,11 @@ export default function Concept({ margin, items, title, type }) {
         {items.map((item) => (
           <div
             key={item.id}
-            className={type === "concept" ? "bg-gray-100 p-2 rounded flex justify-center items-center" : ""}
+            className={
+              type === "concept"
+                ? "bg-gray-100 p-2 rounded flex justify-center items-center"
+                : ""
+            }
           >
             {type === "concept" && (
               <Image

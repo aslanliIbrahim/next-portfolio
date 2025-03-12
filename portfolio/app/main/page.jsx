@@ -9,15 +9,15 @@ export default function HomePage() {
   return (
     <div>
       <Title />
-      <Card margin="127px" projects={projects} />
+      <Card projects={projects} />
       <Concept
-        margin="127px"
+        
         type="concept"
         title="Some concept works"
         items={conceptWorks}
       />
       <Concept
-        margin="127px"
+        
         type="experience"
         title="Experience"
         items={experience}
