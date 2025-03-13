@@ -17,7 +17,7 @@ export default function Card({ projects, linkTitle = "See All" }) {
             </p>
             <Link
               className="text-gray-700 font-medium underline underline-offset-1"
-              href={project.id}
+              href={`/main/${project.id}`}
             >
               {linkTitle}
             </Link>
