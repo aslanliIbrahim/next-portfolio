@@ -1,11 +1,9 @@
-'use client'
+"use client";
 import { useParams } from "next/navigation";
 import { projects } from "@/data/projects";
 
 const ProjectDetail = () => {
-  const { id } = useParams(); // Get the dynamic ID
-
-  // Find the project by ID
+  const { id } = useParams();
   const project = projects.find((proj) => proj.id.toString() === id);
 
   if (!project) {

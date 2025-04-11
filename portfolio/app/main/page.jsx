@@ -10,18 +10,8 @@ export default function HomePage() {
     <div>
       <Title />
       <Card projects={projects} />
-      <Concept
-        
-        type="concept"
-        title="Some concept works"
-        items={conceptWorks}
-      />
-      <Concept
-        
-        type="experience"
-        title="Experience"
-        items={experience}
-      />
+      <Concept type="concept" title="Some concept works" items={conceptWorks} />
+      <Concept type="experience" title="Experience" items={experience} />
       <Form />
     </div>
   );
