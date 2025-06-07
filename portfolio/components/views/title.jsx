@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Aslanli from "../../public/Aslanli.jpg";
+import Aslanli3 from "../../public/Aslanlibrahim2.jpeg";
+
 import Link from "next/link";
 
 export default function Title() {
@@ -13,7 +14,7 @@ export default function Title() {
         */}
       <div className="w-[74px] h-[74px]  rounded-full mb-4">
         <Image
-          src={Aslanli}
+          src={Aslanli3}
           className="w-full h-full object-cover rounded-full"
           alt="Aslanli_Ibrahim"
         />
