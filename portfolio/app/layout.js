@@ -1,7 +1,9 @@
-import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { Montserrat } from "next/font/google";
 import Footer from "@/components/layout/footer";
-import { ReactLenis } from "../utils/lenis.js";
+import { ReactLenis } from "@/utils/lenis.js";
+import { ThemeProvider } from "next-themes";
+
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
@@ -14,15 +16,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <ReactLenis root>
-        <body
-          className={`${montserrat.variable} antialiased max-w-4xl mx-auto px-4 py-4`}
-        >
-          {children}
-          <Footer />
-        </body>
-      </ReactLenis>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${montserrat.variable} antialiased max-w-4xl mx-auto px-4 py-4 bg-bgLight text-textPrimary dark:bg-bgDark dark:text-textGray400 transition-colors duration-300`}
+      >
+        <ReactLenis root>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </ReactLenis>
+      </body>
     </html>
   );
 }

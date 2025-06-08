@@ -2,12 +2,11 @@ import Card from "@/components/shared/card";
 import Concept from "@/components/shared/concept";
 import Form from "@/components/shared/form";
 import Title from "@/components/views/title";
-import { projects } from "@/data/projects";
-import { conceptWorks } from "@/data/projects";
-import { experience } from "@/data/projects";
+import { projects, conceptWorks, experience } from "@/data/projects";
+
 export default function HomePage() {
   return (
-    <div>
+    <div className="bg-bgLight text-textPrimary dark:bg-bgDark dark:text-textGray400 transition-colors duration-300">
       <Title />
       <Card projects={projects} />
       <Concept type="concept" title="Some concept works" items={conceptWorks} />
