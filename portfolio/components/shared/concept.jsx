@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Concept({ items, title, type }) {
   return (
-    <section className="my-[127px]">
+    <section className="my-[80px] md:my-[127px]">
       <div>
         <h2 className="font-medium text-textGray700 dark:text-textGray400 text-2xl mb-4">
           {title}

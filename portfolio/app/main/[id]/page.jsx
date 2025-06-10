@@ -48,7 +48,7 @@ const ProjectDetail = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-[127px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-[80px] md:my-[127px]">
         <div className="w-[264px]">
           <h2 className="text-textPrimary dark:text-textGray400 mb-2">Team</h2>
           <p className="text-textSecondary dark:text-textGray400 font-light">
