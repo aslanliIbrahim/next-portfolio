@@ -1,8 +1,9 @@
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/layout/footer";
-import useLenis, { ReactLenis } from "@/utils/lenis.js";
+import { ReactLenis } from "@/utils/lenis.js";
 import { ThemeProvider } from "next-themes";
+import Seo from "@/components/shared/seo";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -16,10 +17,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="az" suppressHydrationWarning>
       <body
         className={`${montserrat.variable} antialiased max-w-4xl mx-auto px-4 py-4 bg-bgLight text-textPrimary dark:bg-bgDark dark:text-textGray400 transition-colors duration-300`}
       >
+        <Seo
+          title="İbrahim Aslanlı – Frontend Developer"
+          description="İbrahim Aslanlı'nın portfolio saytı – React.js, Next.js, Tailwind CSS və digər müasir frontend texnologiyaları ilə hazırlanmış peşəkar veb layihələr."
+          image="/og-image.png"
+          url="https://ibrahimaslanli.dev"
+        />
         <ReactLenis root>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
             {children}
