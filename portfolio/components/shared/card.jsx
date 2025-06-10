@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Card({ projects, linkTitle = "See All" }) {
   return (
-    <section className="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-[127px]">
+    <section className="grid justify-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-[80px] md:my-[127px]">
       {projects.map((project) => (
         <div className="w-[264px]" key={project.id}>
           <div className="mb-4">

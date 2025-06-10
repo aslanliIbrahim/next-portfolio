@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/layout/footer";
-import { ReactLenis } from "@/utils/lenis.js";
+import useLenis, { ReactLenis } from "@/utils/lenis.js";
 import { ThemeProvider } from "next-themes";
 
 const montserrat = Montserrat({
